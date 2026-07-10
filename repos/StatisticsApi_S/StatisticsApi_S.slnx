@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../StatisticsAPITest/StatisticsAPITest.csproj" />
+  <Project Path="StatisticsApi_S.csproj" />
+</Solution>

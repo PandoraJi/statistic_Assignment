@@ -1,0 +1,189 @@
+﻿## From full 'Tests' logs:
+Log level is set to Informational (Default).
+Connected to test environment '< Local Windows Environment >'
+Test data store opened in 0,073 sec.
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.9)
+[xUnit.net 00:00:02.69]   Discovering: StatisticsAPITest
+[xUnit.net 00:00:02.97]   Discovered:  StatisticsAPITest
+========== Test discovery finished: 22 Tests found in 10,6 sec ==========
+Executing all tests in project: StatisticsAPITest
+========== Starting test run ==========
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.9)
+[xUnit.net 00:00:00.30]   Starting:    StatisticsAPITest
+Error occurred while calculating statistics: 'C1' does not exist in this file
+     Warning:
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+     A paid commercial license supports the development and continued increasing support of
+     Fluent Assertions users under both commercial and community licenses. Help us
+     keep Fluent Assertions at the forefront of unit testing.
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+Error occurred while calculating statistics: not a parquet file, head: 4E6F7420, tail: 71756574
+Error occurred while calculating statistics: not a Parquet file (size too small)
+[xUnit.net 00:00:02.46]     StatisticsAPITest.StatisticsServiceTests.OneColumn_ShouldReturnSameStatistics [FAIL]
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:02.46]       Expected result not to be <null>.
+[xUnit.net 00:00:02.46]       Stack Trace:
+[xUnit.net 00:00:02.46]            at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)
+[xUnit.net 00:00:02.46]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(112,0): at StatisticsAPITest.StatisticsServiceTests.OneColumn_ShouldReturnSameStatistics()
+[xUnit.net 00:00:02.47]         --- End of stack trace from previous location ---
+Error occurred while calculating statistics: 'C1' does not exist in this file
+Error occurred while calculating statistics: 'C1' does not exist in this file
+Error occurred while calculating statistics: 'C1' does not exist in this file
+Error occurred while calculating statistics: 'C1' does not exist in this file
+Error occurred while calculating statistics: 'C1' does not exist in this file
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:02.49]     StatisticsAPITest.StatisticsServiceTests.InvalidParquet_ShouldThrowException [FAIL]
+[xUnit.net 00:00:02.49]       Assert.Throws() Failure: No exception was thrown
+[xUnit.net 00:00:02.49]       Expected: typeof(System.Exception)
+[xUnit.net 00:00:02.49]       Stack Trace:
+[xUnit.net 00:00:02.49]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(157,0): at StatisticsAPITest.StatisticsServiceTests.InvalidParquet_ShouldThrowException()
+[xUnit.net 00:00:02.49]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.49]     StatisticsAPITest.StatisticsServiceTests.EmptyStream_ShouldThrowException [FAIL]
+[xUnit.net 00:00:02.49]       Assert.Throws() Failure: No exception was thrown
+[xUnit.net 00:00:02.49]       Expected: typeof(System.Exception)
+[xUnit.net 00:00:02.49]       Stack Trace:
+[xUnit.net 00:00:02.49]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(142,0): at StatisticsAPITest.StatisticsServiceTests.EmptyStream_ShouldThrowException()
+[xUnit.net 00:00:02.49]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.49]     StatisticsAPITest.StatisticsControllerTests.Statistics_ShouldReturnOk_WhenAllValuesAreEqual [FAIL]
+[xUnit.net 00:00:02.49]       System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[xUnit.net 00:00:02.49]       Stack Trace:
+[xUnit.net 00:00:02.49]            at System.Collections.Generic.List`1.get_Item(Int32 index)
+[xUnit.net 00:00:02.49]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsControllerTests.cs(227,0): at StatisticsAPITest.StatisticsControllerTests.Statistics_ShouldReturnOk_WhenAllValuesAreEqual()
+[xUnit.net 00:00:02.49]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.50]     StatisticsAPITest.StatisticsServiceTests.DuplicateValues_ShouldReturnSamePercentiles [FAIL]
+[xUnit.net 00:00:02.50]       Expected result not to be <null>.
+[xUnit.net 00:00:02.50]       Stack Trace:
+[xUnit.net 00:00:02.50]            at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)
+[xUnit.net 00:00:02.50]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(99,0): at StatisticsAPITest.StatisticsServiceTests.DuplicateValues_ShouldReturnSamePercentiles()
+[xUnit.net 00:00:02.50]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.50]     StatisticsAPITest.StatisticsServiceTests.SingleRow_ShouldCalculateCorrectStatistics [FAIL]
+[xUnit.net 00:00:02.50]       Assert.NotNull() Failure: Value is null
+[xUnit.net 00:00:02.50]       Stack Trace:
+[xUnit.net 00:00:02.50]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(22,0): at StatisticsAPITest.StatisticsServiceTests.SingleRow_ShouldCalculateCorrectStatistics()
+[xUnit.net 00:00:02.50]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.50]     StatisticsAPITest.StatisticsServiceTests.NegativeValues_ShouldCalculateCorrectly [FAIL]
+[xUnit.net 00:00:02.50]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:02.50]       Stack Trace:
+[xUnit.net 00:00:02.50]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(72,0): at StatisticsAPITest.StatisticsServiceTests.NegativeValues_ShouldCalculateCorrectly()
+[xUnit.net 00:00:02.50]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.51]     StatisticsAPITest.StatisticsServiceTests.DecimalValues_ShouldCalculateCorrectly [FAIL]
+[xUnit.net 00:00:02.51]       Expected result not to be <null>.
+[xUnit.net 00:00:02.51]       Stack Trace:
+[xUnit.net 00:00:02.51]            at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)
+[xUnit.net 00:00:02.51]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(86,0): at StatisticsAPITest.StatisticsServiceTests.DecimalValues_ShouldCalculateCorrectly()
+[xUnit.net 00:00:02.51]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.51]     StatisticsAPITest.StatisticsServiceTests.LargeDataset_ShouldCompleteSuccessfully [FAIL]
+[xUnit.net 00:00:02.51]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:02.51]       Stack Trace:
+[xUnit.net 00:00:02.51]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(134,0): at StatisticsAPITest.StatisticsServiceTests.LargeDataset_ShouldCompleteSuccessfully()
+[xUnit.net 00:00:02.51]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.51]     StatisticsAPITest.StatisticsServiceTests.MultipleRows_ShouldReturnCorrectRowCount [FAIL]
+[xUnit.net 00:00:02.51]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:02.51]       Stack Trace:
+[xUnit.net 00:00:02.51]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(42,0): at StatisticsAPITest.StatisticsServiceTests.MultipleRows_ShouldReturnCorrectRowCount()
+[xUnit.net 00:00:02.51]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.51]     StatisticsAPITest.StatisticsServiceTests.EqualValues_ShouldReturnSameStatistics [FAIL]
+[xUnit.net 00:00:02.51]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:02.51]       Stack Trace:
+[xUnit.net 00:00:02.51]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(55,0): at StatisticsAPITest.StatisticsServiceTests.EqualValues_ShouldReturnSameStatistics()
+[xUnit.net 00:00:02.51]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.52]   Finished:    StatisticsAPITest
+========== Test run finished: 22 Tests (11 Passed, 11 Failed, 0 Skipped) run in 2,5 sec ==========
+========== Starting test discovery ==========
+========== Test discovery skipped: All test containers are up to date ==========
+No tests found to run.
+Building Test Projects
+Starting test discovery for requested test run
+========== Starting test discovery ==========
+========== Test discovery skipped: All test containers are up to date ==========
+========== Starting test run ==========
+[xUnit.net 00:00:00.01] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.9)
+[xUnit.net 00:00:00.49]   Starting:    StatisticsAPITest
+Error occurred while calculating statistics: 'C1' does not exist in this file
+     Warning:
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+     A paid commercial license supports the development and continued increasing support of
+     Fluent Assertions users under both commercial and community licenses. Help us
+     keep Fluent Assertions at the forefront of unit testing.
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+Error occurred while calculating statistics: not a parquet file, head: 4E6F7420, tail: 71756574
+Error occurred while calculating statistics: not a Parquet file (size too small)
+[xUnit.net 00:00:00.96]     StatisticsAPITest.StatisticsControllerTests.Statistics_ShouldReturnOk_WhenAllValuesAreEqual [FAIL]
+[xUnit.net 00:00:00.96]       System.ArgumentOutOfRangeException : Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[xUnit.net 00:00:00.96]       Stack Trace:
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:00.96]            at System.Collections.Generic.List`1.get_Item(Int32 index)
+[xUnit.net 00:00:00.96]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsControllerTests.cs(227,0): at StatisticsAPITest.StatisticsControllerTests.Statistics_ShouldReturnOk_WhenAllValuesAreEqual()
+[xUnit.net 00:00:00.96]         --- End of stack trace from previous location ---
+Error occurred while calculating statistics: 'C1' does not exist in this file
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:00.97]     StatisticsAPITest.StatisticsServiceTests.OneColumn_ShouldReturnSameStatistics [FAIL]
+[xUnit.net 00:00:00.97]       Expected result not to be <null>.
+[xUnit.net 00:00:00.97]       Stack Trace:
+[xUnit.net 00:00:00.97]            at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)
+[xUnit.net 00:00:00.97]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(112,0): at StatisticsAPITest.StatisticsServiceTests.OneColumn_ShouldReturnSameStatistics()
+[xUnit.net 00:00:00.97]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.97]     StatisticsAPITest.StatisticsServiceTests.InvalidParquet_ShouldThrowException [FAIL]
+[xUnit.net 00:00:00.97]       Assert.Throws() Failure: No exception was thrown
+[xUnit.net 00:00:00.97]       Expected: typeof(System.Exception)
+[xUnit.net 00:00:00.97]       Stack Trace:
+[xUnit.net 00:00:00.97]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(157,0): at StatisticsAPITest.StatisticsServiceTests.InvalidParquet_ShouldThrowException()
+[xUnit.net 00:00:00.97]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.97]     StatisticsAPITest.StatisticsServiceTests.EmptyStream_ShouldThrowException [FAIL]
+[xUnit.net 00:00:00.97]       Assert.Throws() Failure: No exception was thrown
+[xUnit.net 00:00:00.97]       Expected: typeof(System.Exception)
+[xUnit.net 00:00:00.97]       Stack Trace:
+[xUnit.net 00:00:00.97]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(142,0): at StatisticsAPITest.StatisticsServiceTests.EmptyStream_ShouldThrowException()
+[xUnit.net 00:00:00.97]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.97]     StatisticsAPITest.StatisticsServiceTests.DuplicateValues_ShouldReturnSamePercentiles [FAIL]
+[xUnit.net 00:00:00.97]       Expected result not to be <null>.
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:00.97]       Stack Trace:
+[xUnit.net 00:00:00.97]            at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)
+[xUnit.net 00:00:00.98]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(99,0): at StatisticsAPITest.StatisticsServiceTests.DuplicateValues_ShouldReturnSamePercentiles()
+[xUnit.net 00:00:00.98]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.98]     StatisticsAPITest.StatisticsServiceTests.SingleRow_ShouldCalculateCorrectStatistics [FAIL]
+[xUnit.net 00:00:00.98]       Assert.NotNull() Failure: Value is null
+[xUnit.net 00:00:00.98]       Stack Trace:
+[xUnit.net 00:00:00.98]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(22,0): at StatisticsAPITest.StatisticsServiceTests.SingleRow_ShouldCalculateCorrectStatistics()
+[xUnit.net 00:00:00.98]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.98]     StatisticsAPITest.StatisticsServiceTests.NegativeValues_ShouldCalculateCorrectly [FAIL]
+[xUnit.net 00:00:00.98]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:00.98]       Stack Trace:
+[xUnit.net 00:00:00.98]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(72,0): at StatisticsAPITest.StatisticsServiceTests.NegativeValues_ShouldCalculateCorrectly()
+[xUnit.net 00:00:00.98]         --- End of stack trace from previous location ---
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:00.98]     StatisticsAPITest.StatisticsServiceTests.DecimalValues_ShouldCalculateCorrectly [FAIL]
+[xUnit.net 00:00:00.98]       Expected result not to be <null>.
+[xUnit.net 00:00:00.98]       Stack Trace:
+[xUnit.net 00:00:00.98]            at FluentAssertions.Primitives.ReferenceTypeAssertions`2.NotBeNull(String because, Object[] becauseArgs)
+[xUnit.net 00:00:00.98]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(86,0): at StatisticsAPITest.StatisticsServiceTests.DecimalValues_ShouldCalculateCorrectly()
+[xUnit.net 00:00:00.98]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.98]     StatisticsAPITest.StatisticsServiceTests.LargeDataset_ShouldCompleteSuccessfully [FAIL]
+[xUnit.net 00:00:00.98]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:00.98]       Stack Trace:
+[xUnit.net 00:00:00.98]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(134,0): at StatisticsAPITest.StatisticsServiceTests.LargeDataset_ShouldCompleteSuccessfully()
+[xUnit.net 00:00:00.98]         --- End of stack trace from previous location ---
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:00.99]     StatisticsAPITest.StatisticsServiceTests.MultipleRows_ShouldReturnCorrectRowCount [FAIL]
+[xUnit.net 00:00:00.99]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:00.99]       Stack Trace:
+[xUnit.net 00:00:00.99]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(42,0): at StatisticsAPITest.StatisticsServiceTests.MultipleRows_ShouldReturnCorrectRowCount()
+[xUnit.net 00:00:00.99]         --- End of stack trace from previous location ---
+Error occurred while calculating statistics: 'C1' does not exist in this file
+[xUnit.net 00:00:00.99]     StatisticsAPITest.StatisticsServiceTests.EqualValues_ShouldReturnSameStatistics [FAIL]
+[xUnit.net 00:00:00.99]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:00.99]       Stack Trace:
+[xUnit.net 00:00:00.99]         C:\Users\deeps\source\repos\StatisticsAPITest\StatisticsServiceTests.cs(55,0): at StatisticsAPITest.StatisticsServiceTests.EqualValues_ShouldReturnSameStatistics()
+[xUnit.net 00:00:00.99]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:01.00]   Finished:    StatisticsAPITest
+========== Test run finished: 22 Tests (11 Passed, 11 Failed, 0 Skipped) run in 1 sec ==========
